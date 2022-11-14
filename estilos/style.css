@@ -28,23 +28,26 @@ main {
     height: 100vh;
 }
 
-section#login {
+main section {
     background: var(--white);
-    border-radius: 20px;
-    width: 250px;
+    width: 100%;
+    max-width: 400px;
     height: 500px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 5px 6px 1px #25271a90;
+    /* box-shadow: 5px 6px 1px #25271a90; */
     overflow: hidden; /*Para esconder a borda quadrada da div#imagem */
 }
 
 section#login > div#imagem {
+    display: block;
+    margin: auto;
     background-color: var(--ghostbrown);
     background: url("../imagens/fundo.jpg") center center no-repeat fixed;
     background-size: cover;
+    max-width: 400px;
     height: 200px; /* Se não a imagem não aparece */
 }
 
