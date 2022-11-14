@@ -1,7 +1,16 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 400px) and (max-width: 600px) {
-    main section#login {
+:root {
+    --white: #F4F4F4;
+    --black: #25271A;
+    --grey: #DEDEDE;
+    --brown: #4C2C17;
+    --lightbrown: #A77A51;
+    --ghostbrown: #a77b51dd;
+}
+
+@media screen and (orientation: landscape) {
+main section#login {
     max-width: 90vw;
     height: 300px;
     border-radius: 15px;
@@ -20,21 +29,33 @@ section#login > div#imagem {
 section#login > div#formulario {
     padding: 10px;
 }
+}
 
-div#formulario h1 {
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    body {
+        background: linear-gradient(to bottom, var(--lightbrown) 70%, var(--brown));
+    }
+
+   section#login {
+    border-radius: 20px;
+    box-shadow: 5px 6px 1px var(--brown);
+    height: 500px;
+   }
+
+   div#formulario h1 {
     margin-top: 10px;
-    font-size: 1.1em;
 }
 
 div#formulario p {
-    margin-top: 10px;
-    font-size: .9em;
+    margin-top: 20px;
+}
 }
 
-}
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    body {
+        background: linear-gradient(to bottom, var(--lightbrown) 70%, var(--brown));
+    }
 
-
-@media screen and (min-width: 600px) and (max-width: 900px) {
     main section#login {
         max-width: 90vw;
         height: 400px;
@@ -65,6 +86,10 @@ div#formulario p {
 }
 
 @media screen and (min-width: 900px) {
+    body {
+        background: linear-gradient(to bottom, var(--lightbrown) 70%, var(--brown));
+    }
+
     main section#login {
         width: 90vw;
         max-width: 1100px;
@@ -74,7 +99,7 @@ div#formulario p {
     }
 
     section#login > div#imagem {
-        background-position: center center;
+  background-position: center center;
         float: left;
         width: 50%;
         height: 100%;
