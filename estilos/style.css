@@ -6,5 +6,50 @@
     --grey: #DEDEDE;
     --brown: #4C2C17;
     --lightbrown: #A77A51;
+    --ghostbrown: #a77b51dd;
 }
 
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--ghostbrown);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login {
+    background: var(--white);
+    border-radius: 20px;
+    width: 250px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 6px 1px #25271a90;
+    overflow: hidden; /*Para esconder a borda quadrada da div#imagem */
+}
+
+section#login > div#imagem {
+    background-color: var(--ghostbrown);
+    background: url("../imagens/fundo.jpg") center center no-repeat fixed;
+    background-size: cover;
+    height: 200px; /* Se não a imagem não aparece */
+}
+
+section#login > div#formulario {
+    padding: 10px;
+    display: block;
+
+}
