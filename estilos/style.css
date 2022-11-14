@@ -1,89 +1,89 @@
 @charset "UTF-8";
 
 :root {
-    --white: #F4F4F4;
-    --black: #25271A;
-    --grey: #DEDEDE;
-    --brown: #4C2C17;
-    --lightbrown: #A77A51;
-    --ghostbrown: #a77b51dd;
+  --white: #f4f4f4;
+  --black: #25271a;
+  --grey: #dedede;
+  --brown: #4c2c17;
+  --lightbrown: #a77a51;
+  --ghostbrown: #a77b51dd;
 }
 
 * {
-    font-size: 1em;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-size: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--ghostbrown);
-    height: 100vh;
-    width: 100vw;
+  background-color: var(--ghostbrown);
+  height: 100vh;
+  width: 100vw;
 }
 
 main {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
 main section {
-    transition: .2s;
-    background: var(--white);
-    width: 100%;
-    max-width: 400px;
-    /* height: 500px; */
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* box-shadow: 5px 6px 1px #25271a90; */
-    overflow: hidden; /*Para esconder a borda quadrada da div#imagem */
+  transition: 0.2s;
+  background: var(--white);
+  width: 100%;
+  max-width: 400px;
+  /* height: 500px; */
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* box-shadow: 5px 6px 1px #25271a90; */
+  overflow: hidden; /*Para esconder a borda quadrada da div#imagem */
 
-    transition-duration: height .3s width .3s border-radius .3s;
-    transition-timing-function: ease; /*Para suavizar*/
+  transition-duration: height 0.3s width 0.3s border-radius 0.3s;
+  transition-timing-function: ease; /*Para suavizar*/
 }
 
 section#login > div#imagem {
-    display: block;
-    margin: auto;
-    background-color: var(--ghostbrown);
-    background: url("../imagens/fundo.jpg") center center no-repeat fixed;
-    background-size: cover;
-    max-width: 400px;
-    height: 200px; /* Se não a imagem não aparece */
+  display: block;
+  margin: auto;
+  background-color: var(--ghostbrown);
+  background: url("../imagens/fundo.jpg") center center no-repeat fixed;
+  background-size: cover;
+  max-width: 400px;
+  height: 200px; /* Se não a imagem não aparece */
 }
 
 section#login > div#formulario {
-    padding: 10px;
-    display: block;
-
+  padding: 10px;
+  display: block;
 }
 
 div#formulario h1 {
-    font-size: 1.2em;
-    margin-top: 10px;
+  font-size: 1.2em;
+  margin-top: 10px;
 }
 
 div#formulario p {
-    font-size: 1em;
-    margin-top: 20px;
+  font-size: 1em;
+  margin-top: 20px;
 }
 
 div.container {
-    display: block;
-    padding: 10px;
+  display: block;
+  padding: 10px;
 }
 
 form label {
-    display: inline-block;
-    width: 60px;
+  display: inline-block;
+  width: 60px;
 }
 
 form input {
-    display: inline-block;
-    width: 200px;
+  display: inline-block;
+  width: 200px;
 }
