@@ -72,3 +72,18 @@ div#formulario p {
     font-size: 1em;
     margin-top: 20px;
 }
+
+div.container {
+    display: block;
+    padding: 10px;
+}
+
+form label {
+    display: inline-block;
+    width: 60px;
+}
+
+form input {
+    display: inline-block;
+    width: 200px;
+}

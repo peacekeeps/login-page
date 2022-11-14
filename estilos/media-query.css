@@ -51,7 +51,7 @@ div#formulario p {
 }
 }
 
-@media screen and (min-width: 768px) and (max-width: 900px) {
+@media screen and (min-width: 768px) and (max-width: 990px) {
     body {
         background: linear-gradient(to bottom, var(--lightbrown) 70%, var(--brown));
     }
@@ -85,7 +85,7 @@ div#formulario p {
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 990px) {
     body {
         background: linear-gradient(to bottom, var(--lightbrown) 70%, var(--brown));
     }
@@ -99,7 +99,7 @@ div#formulario p {
     }
 
     section#login > div#imagem {
-  background-position: center center;
+        background-position-x: 42%;
         float: left;
         width: 50%;
         height: 100%;
