@@ -16,16 +16,16 @@
         <div id="imagem"></div>
         <div id="formulario">
           <h1>Login</h1>
-          <p>
+          <p class="media-all">
             Seja bem-vindo(a) novamente. Faça login para acessar sua conta e
             poder fazer as configurações no seu ambiente.
-          </p>
+          </p><span class="media-mobile">Bem-vindo(a)! Faça login para acessar sua conta:</span>
           <form action="login.php" method="post">
             <fieldset>
               <div class="container">
                 <i class="material-icons">person</i>
-                <input type="email" name="login" id="login" required autocomplete="email"/>
-                <label for="login">Login: </label>
+                <input type="email" name="login" id="login" required placeholder="email@email.com" autocomplete="email"/>
+                <label for="login" name="label-login" id="label-login">Login: </label>
               </div>
 
               <div class="container">
@@ -37,11 +37,13 @@
                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                   title="Deve conter no mínimo oito caracteres, um número, uma letra maiúscula, uma letra minúscula"
                   autocomplete="current-password"
+                  placeholder="Sua senha"
                   required
                 />
-                <label for="password">Senha: </label>
+                <label for="password" name="label-password" id="label-password">Senha: </label>
               </div>
-              <a href="esqueci.html">Esqueci a senha <i class="material-icons">mail</i></a>
+              <a href="esqueci.html" class="forgot">Esqueci a senha <i class="material-icons forgot-ico">mail</i></a>
+              <hr id="submit-hr">
               <input type="submit" value="Sign In" />
             </fieldset>
           </form>

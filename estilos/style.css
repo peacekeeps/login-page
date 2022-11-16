@@ -31,7 +31,6 @@ main {
 }
 
 main section {
-  transition: 0.2s;
   background: var(--white);
   width: 100%;
   max-width: 400px;
@@ -43,8 +42,9 @@ main section {
   transform: translate(-50%, -50%);
   /* box-shadow: 5px 6px 1px #25271a90; */
   overflow: hidden; /*Para esconder a borda quadrada da div#imagem */
+  border: 1px solid var(--brown);
 
-  transition-duration: height 0.3s width 0.3s border-radius 0.3s;
+  transition: height 0.3s, width 0.3s;
   transition-timing-function: ease; /*Para suavizar*/
 }
 
@@ -64,8 +64,8 @@ section#login > div#formulario {
 }
 
 div#formulario h1 {
-  font-size: 1.2em;
-  margin-top: 10px;
+  font-size: 1.3em;
+  margin: 10px 0;
 }
 
 div#formulario p {
@@ -73,18 +73,88 @@ div#formulario p {
   margin-top: 20px;
 }
 
+.media-all {
+  display: none;
+}
+
+fieldset {
+  margin-top: 10px;
+  padding-top: 10px;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.464);
+}
+
 div.container {
   border: 1px solid black;
+  background-color: var(--ghostbrown);
+  border: 2px solid var(--ghostbrown);
+  height: 40px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 10px;
   display: block;
+}
+
+div.container i {
+  color: white;
+  /* background-color: black; */
+  font-size: 2em;
+  width: 40px;
+  padding: 5px;
+  transform: translatey(-3px);
+}
+
+div.container input {
+  font-size: 1em;
   padding: 10px;
+  width: calc(100% - 44.4px);
+  transform: translateY(-12px);
+  height: 100%;
+  border-radius: 15px;
 }
 
 form label {
-  display: inline-block;
+  display: none;
   width: 60px;
 }
 
-form input {
-  display: inline-block;
-  width: 200px;
+input[type=submit] {
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  border-radius: 10px;
+  height: 40px;
+  background-color: var(--lightbrown);
+  border: 1px solid black;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: var(--brown);
+  color: white;
+}
+
+hr#submit-hr {
+  width: 80%;
+  margin: 15px auto 0 auto;
+}
+
+form a.forgot {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  background-color: var(--white);
+  color: black;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+form a.forgot:hover {
+  background-color: var(--brown);
+  color: white;
 }
