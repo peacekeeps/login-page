@@ -7,6 +7,8 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css" />
     <link rel="stylesheet" href="estilos/media-query.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
   <body>
     <main id="main">
@@ -21,22 +23,25 @@
           <form action="login.php" method="post">
             <fieldset>
               <div class="container">
+                <i class="material-icons">person</i>
+                <input type="email" name="login" id="login" required autocomplete="email"/>
                 <label for="login">Login: </label>
-                <input type="email" name="login" id="login" required />
               </div>
 
               <div class="container">
-                <label for="password">Senha: </label>
+                <i class="material-icons">vpn_key</i>
                 <input
                   type="password"
                   name="password"
                   id="password"
                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                   title="Deve conter no mínimo oito caracteres, um número, uma letra maiúscula, uma letra minúscula"
+                  autocomplete="current-password"
                   required
                 />
+                <label for="password">Senha: </label>
               </div>
-
+              <a href="esqueci.html">Esqueci a senha <i class="material-icons">mail</i></a>
               <input type="submit" value="Sign In" />
             </fieldset>
           </form>

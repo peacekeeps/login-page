@@ -74,6 +74,7 @@ div#formulario p {
 }
 
 div.container {
+  border: 1px solid black;
   display: block;
   padding: 10px;
 }

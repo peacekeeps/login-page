@@ -9,7 +9,7 @@
   --ghostbrown: #a77b51dd;
 }
 
-@media screen and (orientation: landscape) {
+/* @media screen and (orientation: landscape) {
   main section#login {
     max-width: 90vw;
     height: 300px;
@@ -29,9 +29,9 @@
   section#login > div#formulario {
     padding: 10px;
   }
-}
+} */
 
-@media screen and (min-width: 400px) and (max-width: 768px) {
+@media screen and (min-width: 500px) and (max-width: 768px) {
   body {
     background: linear-gradient(to bottom, var(--lightbrown) 70%, var(--brown));
   }
