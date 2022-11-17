@@ -108,7 +108,7 @@ div.container input {
   font-size: 1em;
   padding: 10px;
   width: calc(100% - 44.4px);
-  transform: translateY(-12px);
+  transform: translateY(-12.5px);
   height: 100%;
   border-radius: 15px;
 }
